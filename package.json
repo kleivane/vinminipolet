@@ -21,6 +21,7 @@
     "express": "~3.4.7",
     "request": "~2.30.0",
     "consolidate": "0.10.0",
-    "handlebars": "1.0.12"
+    "handlebars": "1.0.12",
+    "mongodb": "*"
   }
 }

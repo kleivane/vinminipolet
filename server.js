@@ -4,6 +4,7 @@ var path = require('path');
 var consolidate = require('consolidate');
 
 var routing = require('./routing');
+var config = require('./lib/config')();
 
 var app = express();
 
@@ -15,6 +16,4 @@ app.set('views', path.join(__dirname, 'views'));
 
 routing.setup(app);
 
-var port = process.env.PORT || 1339;
-
-app.listen(port);
+app.listen(config.port);
