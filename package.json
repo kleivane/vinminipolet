@@ -1,0 +1,24 @@
+{
+  "name": "vinminipolet",
+  "version": "0.0.0",
+  "description": "Informasjon om mine viner",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/kleivane/vinminipolet.git"
+  },
+  "author": "",
+  "license": "GPL V2",
+  "bugs": {
+    "url": "https://github.com/kleivane/vinminipolet/issues"
+  },
+  "homepage": "https://github.com/kleivane/vinminipolet",
+  "dependencies": {
+    "express": "~3.4.7",
+    "request": "~2.30.0",
+  }
+}
