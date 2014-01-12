@@ -15,6 +15,8 @@ app.engine("html", consolidate.handlebars);
 app.set('view engine', 'html');
 app.set('views', path.join(__dirname, 'views'));
 
+app.use(express.static(__dirname + '/public'));
+
 routing.setup(app);
 
 
