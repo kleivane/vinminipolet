@@ -1,5 +1,5 @@
-var wineView = require('./lib/wine-view');
-var wineResource = require('./lib/wine-resource');
+var wineView = require('./lib/wine/wine-view');
+var wineResource = require('./lib/wine/wine-resource');
 
 exports.setup = function (app) {
 	app.get('/', wineView.list);
