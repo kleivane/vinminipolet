@@ -1,4 +1,4 @@
 vinminipolet
 ============
 
-Info om mine viner
+Info om vinene i boden
