@@ -3,7 +3,7 @@ var request = require('request');
 var path = require('path');
 var consolidate = require('consolidate');
 
-var port = process.env.PORT || 1339;
+var routing = require('./routing');
 
 var app = express();
 
@@ -13,20 +13,8 @@ app.engine("html", consolidate.handlebars);
 app.set('view engine', 'html');
 app.set('views', path.join(__dirname, 'views'));
 
-app.get('/', function(req, res) {
-  res.json("Get ready for vines!");
-});
+routing.setup(app);
 
-app.get('/new', function(req, res) {
-  res.render('layout', {
-    title: 'Legg inn en ny vin',
-    partials: { content: '_new' }
-  });
-});
-
-app.post('/new', function(req, res) {
-  console.log(req.body);
-  res.send(200);
-});
+var port = process.env.PORT || 1339;
 
 app.listen(port);
