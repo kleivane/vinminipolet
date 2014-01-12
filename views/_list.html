@@ -1,6 +1,16 @@
-Viner i boden
-<ul>
+<table>
 {{#each wines}}
-	<li>{{name}}</li>
+	<tr>
+		<td>{{type}}</td>
+		<td>{{name}}</td>
+		<td>{{year}}</td>
+		<td>{{land}}</td>
+		<td>{{price}} kr.</td>
+		<td>
+		{{#each match}}
+			{{.}}
+		{{/each}}
+		</td>
+	</tr>
 {{/each}}
-</ul>
+</table>
