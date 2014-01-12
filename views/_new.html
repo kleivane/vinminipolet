@@ -1,14 +1,14 @@
-<form method='POST'>
-	<label><input type='text' placeholder="Navn"/></label>
+<form method='post'>
+	<label><input type='text' name='name' placeholder='Navn'/></label>
 	<label>
-		<select>
-			<option value="Rødvin">Rødvin</option>
-			<option value="Hvitvin">Hvitvin</option>
-			<option value="Musserende">Musserende</option>
-			<option value="Annet">Annet</option>
+		<select name='type'>
+			<option value='Rødvin'>Rødvin</option>
+			<option value='Hvitvin'>Hvitvin</option>
+			<option value='Musserende'>Musserende</option>
+			<option value='Annet'>Annet</option>
 		</select>
 	</label>
-	<label>Årstall<input type='number' placeholder="Årstall"/></label>
-	<label>Pris<input type='number' placeholder="Pris"/></label>
-	<input type='submit' value="Legg til"/>
+	<label>Årstall<input type='number' name='year' placeholder='Årstall'/></label>
+	<label>Pris<input type='number' name='price' placeholder='Pris'/></label>
+	<input type='submit' value='Legg til'/>
 </form>

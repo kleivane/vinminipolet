@@ -7,6 +7,8 @@ var port = process.env.PORT || 1339;
 
 var app = express();
 
+app.use(express.bodyParser());
+
 app.engine("html", consolidate.handlebars);
 app.set('view engine', 'html');
 app.set('views', path.join(__dirname, 'views'));
@@ -20,6 +22,11 @@ app.get('/new', function(req, res) {
     title: 'Legg inn en ny vin',
     partials: { content: '_new' }
   });
+});
+
+app.post('/new', function(req, res) {
+  console.log(req.body);
+  res.send(200);
 });
 
 app.listen(port);
