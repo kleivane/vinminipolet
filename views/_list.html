@@ -1,6 +1,6 @@
 <table>
 	<tr>
-		<th>Type</th>
+		<th></th>
 		<th>År</th>
 		<th>Land</th>
 		<th>Distrikt</th>
@@ -10,7 +10,13 @@
 	</tr>
 {{#each wines}}
 	<tr>
-		<td class="{{type}}"></td>
+		<td> 
+			<div class="type-vin {{type}}">
+				<div class="bubble"></div>
+				<div class="bubble"></div>
+				<div class="bubble"></div>
+			</div>
+		</td>
 		<td>{{year}}</td>
 		<td>{{land}}</td>
 		<td>{{district}}</td>

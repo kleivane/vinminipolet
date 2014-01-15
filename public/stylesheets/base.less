@@ -1,13 +1,53 @@
+@grey: lightgrey;
 @redwine:#7f1a1a;
+
+body {
+	line-height: 18px;
+	font-family: Helvetica, arial, sans-serif;
+}
+
 .logo img {
 	max-width: 100%;
 }
 
-.Rødvin {
+td {
+	padding-bottom: 0.4em;
+}
+
+.type-vin {
 	width: 2em;
 	height: 2em;
-	border: 1px solid lightgrey;
+	-moz-box-shadow: 0 0 2px 2px @grey;
+	-webkit-box-shadow: 0 0 2px 2px @grey;
+	box-shadow: 0 0 2px 2px @grey;
 	-moz-border-radius: 12px;
 	border-radius: 12px;
-	background-color: @redwine;
+}
+
+.Rødvin {
+	background-color: lighten(@redwine, 2%);
+}
+
+.Hvitvin {
+	background-color: #fefefa;
+}
+.Musserende {
+	background-color: #fefefa;
+	.bubble {
+		background-color: white;
+		width: 0.4em;
+		height: 0.4em;
+		-moz-border-radius: 12px;
+		border-radius: 5px;
+		border: 1px solid @grey;
+		&:nth-of-type(1) {
+    		margin-left: 0.5em;
+    	}
+    	&:nth-of-type(2) {
+    		margin-left: 0.9em;
+    	}
+    	&:nth-of-type(3) {
+    		margin-left: 0.6em;
+    	}
+	}
 }
