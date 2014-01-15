@@ -1,3 +1,11 @@
 .logo img {
-	max-width: 100%;
+  max-width: 100%;
+}
+.Rødvin {
+  width: 2em;
+  height: 2em;
+  border: 1px solid lightgrey;
+  -moz-border-radius: 12px;
+  border-radius: 12px;
+  background-color: #7f1a1a;
 }
