@@ -2,6 +2,8 @@ var express = require('express');
 var request = require('request');
 var path = require('path');
 var consolidate = require('consolidate');
+var less = require('less-middleware');
+
 
 var db = require('./lib/db');
 var routing = require('./routing');
