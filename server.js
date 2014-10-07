@@ -1,8 +1,8 @@
 var express = require('express');
-var request = require('request');
+var bodyParser = require('body-parser');
+
 var path = require('path');
 var consolidate = require('consolidate');
-var less = require('less-middleware');
 
 
 var db = require('./lib/db');
@@ -11,15 +11,12 @@ var config = require('./lib/config')();
 
 var app = express();
 
-app.use(express.bodyParser());
+app.use(bodyParser.json());
 
 app.engine("html", consolidate.handlebars);
 app.set('view engine', 'html');
 app.set('views', path.join(__dirname, 'views'));
 
-app.use(less({
-        src: __dirname + '/public'
-    }));
 
 app.use(express.static(__dirname + '/public'));
 

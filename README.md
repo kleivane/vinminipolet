@@ -1,4 +1,4 @@
 vinminipolet
 ============
 
-Info om vinene i boden
+Info om vinene (og kanskje etterhvert øl) i boden
