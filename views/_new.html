@@ -1,29 +1,15 @@
 <form method='post'>
-	<label><input type='text' name='land' placeholder='Land'/></label>
-	<label><input type='text' name='district' placeholder='Distrikt'/></label>
-	<label><input type='text' name='name' placeholder='Navn'/></label>
-	<label>
-		<select name='type'>
-			<option value='Rødvin'>Rødvin</option>
-			<option value='Hvitvin'>Hvitvin</option>
-			<option value='Musserende'>Musserende</option>
-			<option value='Annet'>Annet</option>
-		</select>
-	</label>
-	<label><input type='number' name='year' placeholder='Årstall'/></label>
-	<label><input type='number' name='price' placeholder='Pris'/></label>
-    
-    <label>Aperitif<input type="checkbox" name='match' value="Aperitif"></label>
-    <label>Skalldyr<input type="checkbox" name='match' value="Skalldyr"></label>
-    <label>Fisk<input type="checkbox" name='match' value="Fisk"></label>
-    <label>Lyst kjøtt<input type="checkbox" name='match'value="Lyst kjøtt"></label>
-    <label>Småvilt<input type="checkbox" name='match'value="Småvilt"></label>
-    <label>Storvilt<input type="checkbox" name='match' value="Storvilt"></label>
-    <label>Storfe<input type="checkbox" name='match' value="Storfe"></label>
-    <label>Lam og sau<input type="checkbox" name='match' value="Lam og sau"></label>
-    <label>Svin<input type="checkbox" name='match' value="Svin"></label>
-    <label>Grønnsaker<input type="checkbox" name='match' value="Grønnsaker"></label>
-    <label>Ost<input type="checkbox" name='match' value="Ost"></label>
-    <label>Dessert<input type="checkbox" name='match' value="Dessert"></label>
+	<textarea  name="content" style="margin: 2px; height: 215px; width: 660px;">{ "land": "Spania",
+    "name": "Cune Reserva",
+    "type": "Rødvin",
+    "year": "2008",
+    "price": "166",
+    "url": "http://www.vinmonopolet.no/vareutvalg/rodvin/spania/cune-reserva-2009/sku-5705801;pgid=KDlIlR0P8ZxSR0EKznIP3.0d0000DZRGb1cU;sid=76HKkBbll7LKkEXi1pKko9HvLi3I1HEe5lE=",
+    "passer": [
+        "Lam",
+        "Storvilt",
+        "Storfe"
+    ]
+}</textarea>
 	<input type='submit' value='Legg til'/>
 </form>

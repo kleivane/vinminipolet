@@ -1,32 +1,14 @@
 <table>
-	<tr>
-		<th></th>
-		<th>År</th>
-		<th>Land</th>
-		<th>Distrikt</th>
-		<th>Navn</th>
-		<th>Pris</th>
-		<th>Passer til</th>
-	</tr>
+	
 {{#each wines}}
+
 	<tr>
+	{{#each . }}
 		<td> 
-			<div class="type-vin {{type}}">
-				<div class="bubble"></div>
-				<div class="bubble"></div>
-				<div class="bubble"></div>
-			</div>
+			{{this}}
 		</td>
-		<td>{{year}}</td>
-		<td>{{land}}</td>
-		<td>{{district}}</td>
-		<td>{{name}}</td>
-		<td>{{price}} kr.</td>
-		<td>
-		{{#each match}}
-			{{.}}
 		{{/each}}
-		</td>
 	</tr>
+	
 {{/each}}
 </table>
