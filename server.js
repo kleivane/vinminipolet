@@ -31,5 +31,5 @@ db.connect(config.db, function(err){
   	console.log('Connected to ' + config.db.url);
 
 	var server = app.listen(config.port);
-	console.log('Express app listening at port '+ server.address().port);
+	console.log('Express app listening at port ' + config.port);
 });
